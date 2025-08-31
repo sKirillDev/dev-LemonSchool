@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+    --color-stone: #222831;
+    --color-neutral: #31363F;
+    --color-cyan: #76ABAE;
+    --color-brand: #EEEEEE;
+}
