@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>box-sizing</title>
+</head>
+
+<body class="bg-stone">
+    {{> header logo='logo.svg'}}
+    {{> page-title title='Box-sizing'}}
+    <section class="bg-neutral mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+      <div class="container mx-auto px-3">
+        <h2 class="font-semibold text-cyan text-3xl pt-3 pb-8">border-box</h2>
+        <p class="text-xl italic mb-4">Властивості width і height включають в себе значення полів і кордонів, але не відступів (margin). Ця модель використовується браузером Internet Exporer в режимі сумісності.<span class="text-xs not-italic text-stone-400"> Джерело: https://css.in.ua/</span></p>
+        <div class="box-border size-56 border-2 border-cyan text-white p-10 text-2xl flex justify-center items-center">
+          border-box
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-neutral mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+      <div class="container mx-auto px-3">
+        <h2 class="font-semibold text-cyan text-3xl pt-3 pb-8">content-box</h2>
+        <p class="text-xl italic mb-4">Грунтується на стандартах CSS, при цьому властивості width і height задають ширину і висоту контенту і не включають в себе значення відступів, полів і кордонів.<span class="text-xs not-italic text-stone-400"> Джерело: https://css.in.ua/</span></p>
+        <div class="box-content size-56 border-2 border-cyan text-white p-10 text-2xl flex justify-center items-center">
+          content-box
+        </div>
+      </div>
+    </section>
+  {{> footer}}
+
+  <a href="nav.html" class="fixed left-6 bottom-6 bg-pink-400 text-white text-lg  py-2.25 px-5.75 rounded-full hover:bg-pink-500">nav</a>
+</body>
+
+</html>

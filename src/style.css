@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
     --color-stone: #222831;
     --color-neutral: #31363F;
     --color-cyan: #76ABAE;
-    --color-brand: #EEEEEE;
+    --color-white: #EEEEEE;
+
+    --font-rubik: "Rubik";
+}
+
+@layer components {
+    body {
+        font-family: var(--font-rubik);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: var(--color-white);
+    }
+    
+    p {
+        color: var(--color-white);
+    }
 }
