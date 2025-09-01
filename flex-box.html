@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>Flex-box</title>
+</head>
+
+<body class="bg-stone">
+  {{> header logo='logo.svg'}}
+  {{> page-title title='Flex-box CSS'}}
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">flex</h2>
+      <ul class="px-6 mb-6 list-disc">
+        <li class="text-2xl">flex-row</li>
+        <li class="text-2xl">flex-nowrap</li>
+        <li class="text-2xl">justify-start</li>
+        <li class="text-2xl">items-center</li>
+      </ul>
+      <div class="border-1 flex flex-row flex-nowrap justify-start items-center">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">flex-row-reverse</h2>
+      <div class="border-1 flex flex-row-reverse">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">flex-wrap</h2>
+      <div class="border-1 flex flex-row flex-wrap">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">justify-center</h2>
+      <div class="border-1 flex flex-row justify-center">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">justify-end</h2>
+      <div class="border-1 flex flex-row justify-end">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">justify-between</h2>
+      <div class="border-1 flex flex-row justify-between mb-16">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">justify-around</h2>
+      <div class="border-1 flex flex-row justify-around mb-16">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">justify-evenly</h2>
+      <div class="border-1 flex flex-row justify-evenly mb-16">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">items-start</h2>
+      <div class="h-72 border-1 flex flex-row items-start">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center bg-cyan border-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">self-start</h2>
+      <ul class="px-6 mb-6 list-disc">
+        <li class="text-2xl">items-center</li>
+        <li class="text-2xl">justify-between</li>
+      </ul>
+      <div class="h-72 border-1 flex items-center justify-between">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center bg-cyan border-cyan self-start">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">self-end</h2>
+      <ul class="px-6 mb-6 list-disc">
+        <li class="text-2xl">items-center</li>
+        <li class="text-2xl">justify-between</li>
+      </ul>
+      <div class="h-72 border-1 flex items-center justify-between">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center bg-cyan border-cyan self-end">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">items-center</h2>
+      <ul class="px-6 mb-6 list-disc">
+        <li class="text-2xl">flex-col</li>
+      </ul>
+      <div class="h-full border-1 flex flex-col items-center">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center bg-cyan border-cyan self-end">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border-1 flex justify-center items-center">9</div>
+      </div>
+    </div>
+  </section>
+  {{> footer}}
+  <a href="nav.html"
+    class="fixed left-6 bottom-6 bg-pink-400 text-white text-lg  py-2.25 px-5.75 rounded-full hover:bg-pink-500">nav</a>
+</body>
+
+</html>
