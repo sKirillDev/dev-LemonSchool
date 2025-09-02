@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>Vite App</title>
+</head>
+
+<body class="bg-stone">
+  {{> header logo='logo.svg'}}
+  {{> page-title title='Псевдокласи nth-child'}}
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">first</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center first:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">last</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center last:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">odd</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center odd:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">even</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center even:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">nth-5</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-5:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">nth-[n] - кожний</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n]:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">nth-[3n] - кожний третій</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n]:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">nth-[3n+1] - кожний 3-й починаючи з 1-го</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[3n+1]:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">nth-[-n+5] - перших п'ять</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[-n+5]:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">nth-[n+7] - всі починаючи з 7-го</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+7]:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-2">nth-[n+3]:nth-[-n+7] - діапазон з 3-го по 7-й</h2>
+      <div class="border flex">
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">1</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">2</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">3</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">4</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">5</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">6</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">7</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">8</div>
+        <div class="h-8 w-8 lg:h-24 lg:w-24 text-xl border flex justify-center items-center nth-[n+3]:nth-[-n+7]:bg-cyan">9</div>
+      </div>
+    </div>
+  </section>
+  {{> footer}}
+  <a href="nav.html"
+    class="fixed left-6 bottom-6 bg-pink-400 text-white text-lg  py-2.25 px-5.75 rounded-full hover:bg-pink-500">nav</a>
+</body>
+
+</html>
