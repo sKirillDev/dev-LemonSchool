@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>Position</title>
+</head>
+
+<body class="bg-stone">
+  {{> header logo='logo.svg'}}
+  {{> page-title title='Position CSS'}}
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-8">position</h2>
+      <ul>
+        <li class="text-2xl relative before:absolute before:w-2 before:h-2 before:bg-cyan before:rounded-full before:top-3 before:-left-4">static</li>
+        <li class="text-2xl relative before:absolute before:w-2 before:h-2 before:bg-cyan before:rounded-full before:top-3 before:-left-4">relative</li>
+        <li class="text-2xl relative before:absolute before:w-2 before:h-2 before:bg-cyan before:rounded-full before:top-3 before:-left-4">absolute</li>
+        <li class="text-2xl relative before:absolute before:w-2 before:h-2 before:bg-cyan before:rounded-full before:top-3 before:-left-4">fixed</li>
+        <li class="text-2xl relative before:absolute before:w-2 before:h-2 before:bg-cyan before:rounded-full before:top-3 before:-left-4">sticky</li>
+      </ul>
+    </div>
+  </section>
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-8">absolute & relative</h2>
+      <div class="w-100 h-75 bg-white text-neutral relative flex justify-center">
+        relative
+        <div class="absolute w-24 h-24 bg-cyan flex justify-center items-center right-[50%] top-[50%] translate-x-[50%] -translate-y-[50%]">absolute</div>
+      </div>
+      <div class="absolute w-24 h-24 bg-cyan flex justify-center items-center right-[50%] top-[50%] translate-x-[50%] -translate-y-[50%]">absolute</div>
+    </div>
+  </section>
+  <section class="bg-neutral text-white mb-15 lg:mb-24 pt-12 lg:pt-18 pb-16 lg:pb-24">
+    <div class="container mx-auto px-3">
+      <h2 class="font-semibold text-cyan text-3xl pt-3 pb-8">blockquote</h2>
+        <blockquote class="relative bg-stone w-full p-24 text-center before:absolute before:w-2 before:h-full before:bg-cyan before:top-0 before:left-0 after:absolute after:w-12 after:h-12 after:bg-cyan after:-top-6 after:-right-6">
+          <p class="first-letter:text-5xl first-letter:text-cyan text-2xl mb-6">Any application that can be written in JavaScript, will eventually be written in JavaScript.</p>
+          <cite class="italic">— Jeff Atwood</cite>
+        </blockquote>
+    </div>
+  </section>
+  {{> footer}}
+  <a href="nav.html"
+    class="fixed left-6 bottom-6 bg-pink-400 text-white text-lg  py-2.25 px-5.75 rounded-full hover:bg-pink-500">nav</a>
+</body>
+
+</html>

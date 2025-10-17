@@ -5,6 +5,7 @@ import handlebars from 'vite-plugin-handlebars';
 import FullReload from 'vite-plugin-full-reload'
 
 export default defineConfig({
+  base: '/dev-LemonSchool/',
   resolve: {
     alias: {
       "@": resolve(__dirname, "src")
